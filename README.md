@@ -11,6 +11,13 @@ cmake -B build
 cmake --build build
 ```
 
+optionally run self-tests:
+
+```sh
+cd build
+ctest -V
+```
+
 ## MSIS 2.0 license
 
 MSIS® (NRL-SOF-014-1) SOFTWARE

@@ -12,8 +12,3 @@ project(MSIS2
 include(CTest)
 
 include(cmake/msis2.cmake)
-
-
-# if(BUILD_TESTING)
-#   add_subdirectory(tests)
-# endif()
