@@ -1,0 +1,1 @@
+include src/msis2/CMakeLists.txt src/msis2/cmake/msis2.cmake
