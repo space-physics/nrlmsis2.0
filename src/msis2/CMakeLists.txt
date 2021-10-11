@@ -1,21 +1,14 @@
-cmake_minimum_required(VERSION 3.15)
-
-if(NOT CMAKE_BUILD_TYPE)
-  set(CMAKE_BUILD_TYPE Release CACHE STRING "release or debug")
-endif()
+cmake_minimum_required(VERSION 3.15...3.21)
 
 project(MSIS2
   LANGUAGES Fortran
   DESCRIPTION "Build and use MSIS 2.0 from Python"
-  HOMEPAGE_URL https://map.nrl.navy.mil/map/pub/nrl/NRLMSIS/NRLMSIS2.0/)
+  HOMEPAGE_URL https://map.nrl.navy.mil/map/pub/nrl/NRLMSIS/NRLMSIS2.0/
+)
+
+set(FETCHCONTENT_UPDATES_DISCONNECTED_MSIS2 true)
 
 include(cmake/msis2.cmake)
-
-find_package(Python REQUIRED)
-
-if(NOT Python_FOUND)
-  return()
-endif()
 
 add_executable(msis2driver msis2driver.f90)
 target_link_libraries(msis2driver PRIVATE msis2)

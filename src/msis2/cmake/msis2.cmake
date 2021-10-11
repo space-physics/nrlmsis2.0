@@ -3,8 +3,7 @@ include(CheckFortranCompilerFlag)
 
 FetchContent_Declare(msis2proj
 URL https://map.nrl.navy.mil/map/pub/nrl/NRLMSIS/NRLMSIS2.0/NRLMSIS2.0.zip
-URL_HASH SHA1=fa817dfee637ec2298a6ec882345d13d0b087a85
-UPDATE_DISCONNECTED true
+URL_HASH SHA256=bcaf1d0e233dd7a5547b2f0a00c7a83dffa4338475848f696a3a3de253c3c987
 )
 
 FetchContent_MakeAvailable(msis2proj)

@@ -1,8 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
-
-if(NOT CMAKE_BUILD_TYPE)
-  set(CMAKE_BUILD_TYPE Release CACHE STRING "release or debug")
-endif()
+cmake_minimum_required(VERSION 3.15...3.21)
 
 project(MSIS2 LANGUAGES Fortran)
 
